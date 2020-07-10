@@ -21,13 +21,12 @@
     method: GET
     api_endpoint: 
 
-      `http://localhost:3001/search/nearby?radius=10&lat=0.660695891084657e0&lng=-0.677379407923231e2`
+      http://localhost:3001/search/nearby?radius=10&lat=0.660695891084657e0&lng=-0.677379407923231e2
 
     Response:
       status: 200 OK
       body:
 
-      ```ruby
         [
             {
                 "id": 100,
@@ -38,17 +37,15 @@
                 "updated_at": "2020-07-10T08:37:24.930Z"
             }
         ]
-      ```
 
 * To create Bulk Users
     method: POST
     api_endpoint: 
 
-      `http://localhost:3001/users/bulk_create`
+      http://localhost:3001/users/bulk_create
 
     send json form data in the following format:
 
-      ```ruby
       {
            "data": [
           {
@@ -68,13 +65,11 @@
           }
         ]
       }
-      ```
 
       Response:
         status: 200 OK
         body:
 
-          ```ruby
           {
               "success": [
                   {
@@ -104,4 +99,3 @@
               ],
               "errors": []
           }
-          ```
