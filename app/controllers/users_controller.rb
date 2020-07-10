@@ -22,7 +22,7 @@ class UsersController < ApplicationController
       if @user.save
         @success << @user 
       else
-        @errors << @user.errors
+        @errors << {user: user_data, error: @user.errors}
       end
     end
     render json: {success: @success, errors: @errors}, status: :ok
